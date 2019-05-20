@@ -1,4 +1,4 @@
-﻿using Iguana.Winform.UserForms;
+﻿using Iguana.Winform.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,16 +6,16 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Iguana.Tools.GenerateClass
+namespace Iguana.Winform.UserForms
 {
-    public partial class MainForm : UFContentOKForm
+    public partial class UFMessageForm : DevExpress.XtraEditors.XtraForm
     {
-        public MainForm()
+        public UFMessageForm()
         {
             InitializeComponent();
+            this.Font = GlobalSetting.DefaultFont;
         }
     }
 }

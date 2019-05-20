@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Iguana.Winform.UserForms
+namespace Iguana.Winform.UserControls
 {
-    public class Class1
+    public static class UserControlEx
     {
+
     }
 }
