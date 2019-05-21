@@ -60,6 +60,8 @@
             this.pnlTitle.Name = "pnlTitle";
             this.pnlTitle.Size = new System.Drawing.Size(800, 35);
             this.pnlTitle.TabIndex = 1;
+            this.pnlTitle.DoubleClick += new System.EventHandler(this.pnlTitle_DoubleClick);
+            this.pnlTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseMove);
             // 
             // lblClose
             // 
@@ -91,6 +93,8 @@
             this.lblTitle.Size = new System.Drawing.Size(766, 26);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "标题";
+            this.lblTitle.DoubleClick += new System.EventHandler(this.lblTitle_DoubleClick);
+            this.lblTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseMove);
             // 
             // UFContent
             // 
