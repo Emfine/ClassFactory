@@ -1,6 +1,6 @@
 ﻿namespace Iguana.Winform.UserForms
 {
-    partial class UFContentOK
+    partial class UFContent
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pnlContent = new Iguana.Winform.UserControls.UCPanelContainer();
             this.pnlTitle = new Iguana.Winform.UserControls.UCPanelContainer();
             this.lblClose = new Iguana.Winform.UserControls.UCLabelEdit();
             this.lblTitle = new Iguana.Winform.UserControls.UCLabelEdit();
-            this.pnlContent = new Iguana.Winform.UserControls.UCPanelContainer();
-            this.btnOK = new Iguana.Winform.UserControls.UCSimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).BeginInit();
             this.pnlTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).BeginInit();
-            this.pnlContent.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlContent
+            // 
+            this.pnlContent.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this.pnlContent.Appearance.Options.UseBackColor = true;
+            this.pnlContent.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.Location = new System.Drawing.Point(0, 35);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(800, 465);
+            this.pnlContent.TabIndex = 2;
             // 
             // pnlTitle
             // 
@@ -49,8 +58,8 @@
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(800, 30);
-            this.pnlTitle.TabIndex = 0;
+            this.pnlTitle.Size = new System.Drawing.Size(800, 35);
+            this.pnlTitle.TabIndex = 1;
             // 
             // lblClose
             // 
@@ -60,9 +69,9 @@
             this.lblClose.Appearance.Options.UseFont = true;
             this.lblClose.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClose.Location = new System.Drawing.Point(780, 4);
+            this.lblClose.Location = new System.Drawing.Point(777, 5);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(20, 22);
+            this.lblClose.Size = new System.Drawing.Size(23, 26);
             this.lblClose.TabIndex = 0;
             this.lblClose.Text = "关";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
@@ -77,64 +86,34 @@
             this.lblTitle.AutoEllipsis = true;
             this.lblTitle.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblTitle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblTitle.Location = new System.Drawing.Point(3, 4);
+            this.lblTitle.Location = new System.Drawing.Point(3, 5);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(771, 22);
+            this.lblTitle.Size = new System.Drawing.Size(766, 26);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "标题";
             // 
-            // pnlContent
+            // UFContent
             // 
-            this.pnlContent.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
-            this.pnlContent.Appearance.Options.UseBackColor = true;
-            this.pnlContent.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pnlContent.Controls.Add(this.btnOK);
-            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(0, 30);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(800, 470);
-            this.pnlContent.TabIndex = 1;
-            // 
-            // btnOK
-            // 
-            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOK.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.btnOK.Appearance.Options.UseFont = true;
-            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOK.Location = new System.Drawing.Point(722, 444);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
-            this.btnOK.TabIndex = 0;
-            this.btnOK.Text = "确认(&O)";
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-            // 
-            // UFContentOK
-            // 
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "UFContentOK";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UFContentOKForm";
+            this.Name = "UFContent";
+            this.Text = "UFContent";
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).EndInit();
             this.pnlTitle.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).EndInit();
-            this.pnlContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private UserControls.UCPanelContainer pnlTitle;
-        private UserControls.UCLabelEdit lblTitle;
-        private UserControls.UCLabelEdit lblClose;
         private UserControls.UCPanelContainer pnlContent;
-        private UserControls.UCSimpleButton btnOK;
+        private UserControls.UCPanelContainer pnlTitle;
+        private UserControls.UCLabelEdit lblClose;
+        private UserControls.UCLabelEdit lblTitle;
     }
 }

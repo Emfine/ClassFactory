@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Iguana.Tools.GenerateClass
 {
-    public partial class MainForm : UFContentOK
+    public partial class MainForm : UFContent
     {
         public MainForm()
         {
@@ -19,11 +19,6 @@ namespace Iguana.Tools.GenerateClass
         }
 
         protected override void lblClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        protected override void btnOK_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Iguana.Winform.UserForms
 {
-    public partial class UFContentOK : DevExpress.XtraEditors.XtraForm
+    public partial class UFContent : DevExpress.XtraEditors.XtraForm
     {
         public override string Text
         {
@@ -22,7 +22,7 @@ namespace Iguana.Winform.UserForms
             }
         }
 
-        public UFContentOK()
+        public UFContent()
         {
             InitializeComponent();
             this.BackColor = GlobalSetting.DefaultBackgroundColor;
@@ -38,11 +38,6 @@ namespace Iguana.Winform.UserForms
         protected virtual void lblClose_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
-        }
-
-        protected virtual void btnOK_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.OK;
         }
     }
 }

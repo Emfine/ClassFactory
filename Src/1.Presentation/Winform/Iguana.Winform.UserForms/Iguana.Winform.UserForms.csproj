@@ -53,17 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UFContentOKCancel.cs">
+    <Compile Include="UFContent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UFContentOKCancel.Designer.cs">
-      <DependentUpon>UFContentOKCancel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UFContentOK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UFContentOK.Designer.cs">
-      <DependentUpon>UFContentOK.cs</DependentUpon>
+    <Compile Include="UFContent.Designer.cs">
+      <DependentUpon>UFContent.cs</DependentUpon>
     </Compile>
     <Compile Include="UFMessage.cs">
       <SubType>Form</SubType>
@@ -74,8 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="UFContentOK.resx">
-      <DependentUpon>UFContentOK.cs</DependentUpon>
+    <EmbeddedResource Include="UFContent.resx">
+      <DependentUpon>UFContent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
