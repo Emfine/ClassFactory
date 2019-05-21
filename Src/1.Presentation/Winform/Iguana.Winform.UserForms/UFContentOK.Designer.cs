@@ -32,9 +32,11 @@
             this.lblClose = new Iguana.Winform.UserControls.UCLabelEdit();
             this.lblTitle = new Iguana.Winform.UserControls.UCLabelEdit();
             this.pnlContent = new Iguana.Winform.UserControls.UCPanelContainer();
+            this.btnOK = new Iguana.Winform.UserControls.UCSimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).BeginInit();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).BeginInit();
+            this.pnlContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -57,6 +59,7 @@
             this.lblClose.Appearance.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.lblClose.Appearance.Options.UseFont = true;
             this.lblClose.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblClose.Location = new System.Drawing.Point(780, 4);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(20, 22);
@@ -73,9 +76,10 @@
             this.lblTitle.Appearance.Options.UseFont = true;
             this.lblTitle.AutoEllipsis = true;
             this.lblTitle.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblTitle.Location = new System.Drawing.Point(0, 4);
+            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblTitle.Location = new System.Drawing.Point(3, 4);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(774, 22);
+            this.lblTitle.Size = new System.Drawing.Size(771, 22);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "标题";
             // 
@@ -84,11 +88,25 @@
             this.pnlContent.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
             this.pnlContent.Appearance.Options.UseBackColor = true;
             this.pnlContent.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pnlContent.Controls.Add(this.btnOK);
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContent.Location = new System.Drawing.Point(0, 30);
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(800, 470);
             this.pnlContent.TabIndex = 1;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOK.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.btnOK.Appearance.Options.UseFont = true;
+            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOK.Location = new System.Drawing.Point(722, 444);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 0;
+            this.btnOK.Text = "确认(&O)";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // UFContentOK
             // 
@@ -106,6 +124,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).EndInit();
+            this.pnlContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -116,5 +135,6 @@
         private UserControls.UCLabelEdit lblTitle;
         private UserControls.UCLabelEdit lblClose;
         private UserControls.UCPanelContainer pnlContent;
+        private UserControls.UCSimpleButton btnOK;
     }
 }

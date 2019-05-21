@@ -15,6 +15,7 @@ namespace Iguana.Winform.UserControls
         public UCLabelEdit()
         {
             InitializeComponent();
+            this.Cursor = Cursors.Hand;
             this.Font = GlobalSetting.DefaultFont;
         }
     }

@@ -22,5 +22,10 @@ namespace Iguana.Tools.GenerateClass
         {
             Application.Exit();
         }
+
+        protected override void btnOK_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -39,5 +39,10 @@ namespace Iguana.Winform.UserForms
         {
             this.DialogResult = DialogResult.Cancel;
         }
+
+        protected virtual void btnOK_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }
