@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Iguana.Tools.IBLL
 {
-    public class Class1
+    public interface IBaseBLL
     {
     }
 }

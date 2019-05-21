@@ -16,6 +16,7 @@ namespace Iguana.Tools.GenerateClass
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            IOCConfig.Register();
             Application.Run(new MainForm());
         }
     }
