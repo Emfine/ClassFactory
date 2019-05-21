@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Iguana.Winform.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Iguana.Winform.UserForms
 {
-    public partial class UFContentOKCancelForm : DevExpress.XtraEditors.XtraForm
+    public partial class UFMessage : DevExpress.XtraEditors.XtraForm
     {
-        public UFContentOKCancelForm()
+        public UFMessage()
         {
             InitializeComponent();
+            this.Font = GlobalSetting.DefaultFont;
         }
     }
 }

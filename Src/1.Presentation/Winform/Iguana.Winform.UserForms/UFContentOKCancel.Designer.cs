@@ -1,6 +1,6 @@
 ﻿namespace Iguana.Winform.UserForms
 {
-    partial class UFContentOKCancelForm
+    partial class UFContentOKCancel
     {
         /// <summary>
         /// Required designer variable.

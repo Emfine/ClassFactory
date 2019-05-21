@@ -1,6 +1,6 @@
 ﻿namespace Iguana.Winform.UserForms
 {
-    partial class UFContentOKForm
+    partial class UFContentOK
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,10 @@
             this.pnlTitle = new Iguana.Winform.UserControls.UCPanelContainer();
             this.lblClose = new Iguana.Winform.UserControls.UCLabelEdit();
             this.lblTitle = new Iguana.Winform.UserControls.UCLabelEdit();
+            this.pnlContent = new Iguana.Winform.UserControls.UCPanelContainer();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).BeginInit();
             this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -77,20 +79,33 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "标题";
             // 
-            // UFContentOKForm
+            // pnlContent
+            // 
+            this.pnlContent.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
+            this.pnlContent.Appearance.Options.UseBackColor = true;
+            this.pnlContent.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.Location = new System.Drawing.Point(0, 30);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(800, 470);
+            this.pnlContent.TabIndex = 1;
+            // 
+            // UFContentOK
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "UFContentOKForm";
+            this.Name = "UFContentOK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UFContentOKForm";
             ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).EndInit();
             this.pnlTitle.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -100,5 +115,6 @@
         private UserControls.UCPanelContainer pnlTitle;
         private UserControls.UCLabelEdit lblTitle;
         private UserControls.UCLabelEdit lblClose;
+        private UserControls.UCPanelContainer pnlContent;
     }
 }

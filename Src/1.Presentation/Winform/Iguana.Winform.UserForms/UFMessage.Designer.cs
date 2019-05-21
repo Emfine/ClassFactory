@@ -1,6 +1,6 @@
 ﻿namespace Iguana.Winform.UserForms
 {
-    partial class UFMessageForm
+    partial class UFMessage
     {
         /// <summary>
         /// Required designer variable.
