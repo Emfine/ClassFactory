@@ -10,13 +10,12 @@ using Iguana.Winform.Common;
 
 namespace Iguana.Winform.UserControls
 {
-    [ToolboxBitmap(typeof(DevExpress.XtraEditors.LabelControl))]
+    [ToolboxBitmap(typeof(DevExpress.XtraEditors.ComboBoxEdit))]
     [ToolboxItem(true)]
-    public partial class UCLabelEdit : DevExpress.XtraEditors.LabelControl
+    public partial class UCComboBoxEdit : DevExpress.XtraEditors.ComboBoxEdit
     {
-        public UCLabelEdit()
+        public UCComboBoxEdit()
         {
-            InitializeComponent();
             this.Cursor = Cursors.Hand;
             this.Font = GlobalSetting.DefaultFont;
         }

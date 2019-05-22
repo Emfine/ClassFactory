@@ -10,15 +10,14 @@ using Iguana.Winform.Common;
 
 namespace Iguana.Winform.UserControls
 {
-    [ToolboxBitmap(typeof(DevExpress.XtraEditors.PanelControl))]
+    [ToolboxBitmap(typeof(DevExpress.XtraEditors.MemoEdit))]
     [ToolboxItem(true)]
-    public partial class UCPanelContainer : DevExpress.XtraEditors.PanelControl
+    public partial class UCMemoEdit : DevExpress.XtraEditors.MemoEdit
     {
-        public UCPanelContainer()
+        public UCMemoEdit()
         {
             InitializeComponent();
-            this.BackColor = GlobalSetting.DefaultBackgroundColor;
-            this.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.Cursor = Cursors.Hand;
             this.Font = GlobalSetting.DefaultFont;
         }
     }

@@ -10,6 +10,8 @@ using Iguana.Winform.Common;
 
 namespace Iguana.Winform.UserControls
 {
+    [ToolboxBitmap(typeof(DevExpress.XtraEditors.TextEdit))]
+    [ToolboxItem(true)]
     public partial class UCTextEdit : DevExpress.XtraEditors.TextEdit
     {
         public UCTextEdit()

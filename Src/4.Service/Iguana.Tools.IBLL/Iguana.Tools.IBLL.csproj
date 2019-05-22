@@ -44,5 +44,11 @@
     <Compile Include="IBasicBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\3.Domain\Iguana.Tools.DTO\Iguana.Tools.DTO.csproj">
+      <Project>{61D7A075-22FA-4DE7-BDDB-84F30F36BF58}</Project>
+      <Name>Iguana.Tools.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

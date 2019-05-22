@@ -10,6 +10,8 @@ using Iguana.Winform.Common;
 
 namespace Iguana.Winform.UserControls
 {
+    [ToolboxBitmap(typeof(DevExpress.XtraEditors.SimpleButton))]
+    [ToolboxItem(true)]
     public partial class UCSimpleButton : DevExpress.XtraEditors.SimpleButton
     {
         public UCSimpleButton()

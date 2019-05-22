@@ -114,10 +114,9 @@
         }
 
         #endregion
-
-        private UserControls.UCPanelContainer pnlContent;
         private UserControls.UCPanelContainer pnlTitle;
         private UserControls.UCLabelEdit lblClose;
         private UserControls.UCLabelEdit lblTitle;
+        public UserControls.UCPanelContainer pnlContent;
     }
 }
