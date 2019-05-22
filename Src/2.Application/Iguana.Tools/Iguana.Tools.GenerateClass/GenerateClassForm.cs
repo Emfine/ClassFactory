@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Iguana.Tools.GenerateClass
 {
-    public partial class GenerateClassForm : UFContent
+    public partial class GenerateClassForm : Form
     {
         public GenerateClassForm()
         {
             InitializeComponent();
         }
 
-        protected override void lblClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //protected override void lblClose_Click(object sender, EventArgs e)
+        //{
+        //    Application.Exit();
+        //}
     }
 }

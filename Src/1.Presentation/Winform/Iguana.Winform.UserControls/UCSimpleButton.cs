@@ -1,22 +1,20 @@
-﻿using System;
+﻿using Iguana.Winform.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Iguana.Winform.Common;
 
 namespace Iguana.Winform.UserControls
 {
     [ToolboxBitmap(typeof(DevExpress.XtraEditors.SimpleButton))]
     [ToolboxItem(true)]
-    public partial class UCSimpleButton : DevExpress.XtraEditors.SimpleButton
+    public class UCSimpleButton : DevExpress.XtraEditors.SimpleButton
     {
         public UCSimpleButton()
         {
-            InitializeComponent();
             this.Appearance.BackColor = Color.FromArgb(0, 176, 240);
             this.Appearance.BorderColor = Color.FromArgb(0, 176, 240);
             this.AppearanceDisabled.BackColor = Color.Gainsboro;

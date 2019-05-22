@@ -28,27 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // pnlContent
-            // 
-            this.pnlContent.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
-            this.pnlContent.Appearance.Options.UseBackColor = true;
-            this.pnlContent.Size = new System.Drawing.Size(800, 415);
             // 
             // GenerateClassForm
             // 
-            this.AllowMaximized = true;
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
-            this.Appearance.Options.UseBackColor = true;
-            this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "GenerateClassForm";
             this.Text = "GenerateClassForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).EndInit();
             this.ResumeLayout(false);
 
         }

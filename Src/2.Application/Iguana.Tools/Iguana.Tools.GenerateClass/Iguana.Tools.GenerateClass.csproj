@@ -37,15 +37,8 @@
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\IDE\Dev Express\v16.2\Bin\Framework\DevExpress.Data.v16.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="Iguana.Winform.UserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -81,7 +74,6 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -113,6 +105,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\1.Presentation\Winform\Iguana.Winform.Common\Iguana.Winform.Common.csproj">
+      <Project>{b21c7656-66d5-4b80-a17a-0ce0e5617134}</Project>
+      <Name>Iguana.Winform.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\1.Presentation\Winform\Iguana.Winform.UserControls\Iguana.Winform.UserControls.csproj">
+      <Project>{69073955-9555-4fb9-ab84-f6ffe2a874a2}</Project>
+      <Name>Iguana.Winform.UserControls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\1.Presentation\Winform\Iguana.Winform.UserForms\Iguana.Winform.UserForms.csproj">
       <Project>{9499A990-CCF8-4F9F-8B25-2FD9ADF2692D}</Project>
       <Name>Iguana.Winform.UserForms</Name>

@@ -1,22 +1,20 @@
-﻿using System;
+﻿using Iguana.Winform.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Iguana.Winform.Common;
 
 namespace Iguana.Winform.UserControls
 {
     [ToolboxBitmap(typeof(DevExpress.XtraEditors.LabelControl))]
     [ToolboxItem(true)]
-    public partial class UCLabelEdit : DevExpress.XtraEditors.LabelControl
+    public class UCLabelEdit : DevExpress.XtraEditors.LabelControl
     {
         public UCLabelEdit()
         {
-            InitializeComponent();
             this.Cursor = Cursors.Hand;
             this.Font = GlobalSetting.DefaultFont;
         }

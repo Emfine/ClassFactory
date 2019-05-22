@@ -53,38 +53,20 @@
     <Compile Include="UCComboBoxEdit.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UCComboBoxEdit.Designer.cs">
-      <DependentUpon>UCComboBoxEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="UCLabelEdit.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UCLabelEdit.Designer.cs">
-      <DependentUpon>UCLabelEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="UCMemoEdit.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UCMemoEdit.Designer.cs">
-      <DependentUpon>UCMemoEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="UCPanelContainer.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UCPanelContainer.Designer.cs">
-      <DependentUpon>UCPanelContainer.cs</DependentUpon>
     </Compile>
     <Compile Include="UCSimpleButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UCSimpleButton.Designer.cs">
-      <DependentUpon>UCSimpleButton.cs</DependentUpon>
-    </Compile>
     <Compile Include="UCTextEdit.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UCTextEdit.Designer.cs">
-      <DependentUpon>UCTextEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlEx.cs" />
   </ItemGroup>
