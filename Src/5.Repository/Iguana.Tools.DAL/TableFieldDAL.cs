@@ -19,7 +19,7 @@ namespace Iguana.Tools.DAL
                                                is_nullable AS IsNullable,
                                                is_identity AS IsIdentity
                                         FROM sys.all_columns
-                                        WHERE object_id = OBJECT_ID(@Table); ";
+                                        WHERE object_id = OBJECT_ID(@Table);";
             var list = DataHelper.ConnectionFactory(condition.ConnectionString).Query<TableFieldDTO>(sql, condition).ToList();
             return list;
         }

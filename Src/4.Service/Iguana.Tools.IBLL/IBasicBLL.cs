@@ -8,6 +8,6 @@ namespace Iguana.Tools.IBLL
 {
     public interface IBasicBLL : IBaseBLL
     {
-        List<TableFieldDTO> GetTableFieldList(TableFieldCDT condition);
+        string GenerateORMClass(GenerateCDT condition);
     }
 }

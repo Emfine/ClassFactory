@@ -16,6 +16,10 @@ namespace Iguana.Tools.DTO
         /// </summary>
         public string Type { get; set; }
         /// <summary>
+        /// 注释
+        /// </summary>
+        public string Note { get; set; }
+        /// <summary>
         /// 长度
         /// </summary>
         public short Length { get; set; }

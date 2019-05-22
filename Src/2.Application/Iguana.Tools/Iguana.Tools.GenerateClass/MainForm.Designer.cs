@@ -37,6 +37,8 @@
             this.txtClass = new Iguana.Winform.UserControls.UCMemoEdit();
             this.lblPrefix = new Iguana.Winform.UserControls.UCLabelEdit();
             this.txtPrefix = new Iguana.Winform.UserControls.UCTextEdit();
+            this.txtTable = new Iguana.Winform.UserControls.UCTextEdit();
+            this.lblTable = new Iguana.Winform.UserControls.UCLabelEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).BeginInit();
             this.pnlContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spcMain)).BeginInit();
@@ -45,6 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbxDBType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtClass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrefix.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTable.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlContent
@@ -59,9 +62,11 @@
             this.spcMain.Location = new System.Drawing.Point(0, 0);
             this.spcMain.Name = "spcMain";
             this.spcMain.Panel1.Controls.Add(this.btnGenerate);
+            this.spcMain.Panel1.Controls.Add(this.txtTable);
             this.spcMain.Panel1.Controls.Add(this.txtPrefix);
             this.spcMain.Panel1.Controls.Add(this.txtDBString);
             this.spcMain.Panel1.Controls.Add(this.cbxDBType);
+            this.spcMain.Panel1.Controls.Add(this.lblTable);
             this.spcMain.Panel1.Controls.Add(this.lblPrefix);
             this.spcMain.Panel1.Controls.Add(this.lblDBString);
             this.spcMain.Panel1.Controls.Add(this.lblDBType);
@@ -93,11 +98,12 @@
             this.btnGenerate.AppearancePressed.Options.UseBackColor = true;
             this.btnGenerate.AppearancePressed.Options.UseBorderColor = true;
             this.btnGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGenerate.Location = new System.Drawing.Point(321, 87);
+            this.btnGenerate.Location = new System.Drawing.Point(321, 111);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(75, 23);
-            this.btnGenerate.TabIndex = 4;
+            this.btnGenerate.TabIndex = 5;
             this.btnGenerate.Text = "Generate";
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // txtDBString
             // 
@@ -175,6 +181,27 @@
             this.txtPrefix.Size = new System.Drawing.Size(330, 24);
             this.txtPrefix.TabIndex = 3;
             // 
+            // txtTable
+            // 
+            this.txtTable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtTable.Location = new System.Drawing.Point(66, 84);
+            this.txtTable.Name = "txtTable";
+            this.txtTable.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.txtTable.Properties.Appearance.Options.UseFont = true;
+            this.txtTable.Size = new System.Drawing.Size(330, 24);
+            this.txtTable.TabIndex = 4;
+            // 
+            // lblTable
+            // 
+            this.lblTable.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.lblTable.Appearance.Options.UseFont = true;
+            this.lblTable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblTable.Location = new System.Drawing.Point(39, 87);
+            this.lblTable.Name = "lblTable";
+            this.lblTable.Size = new System.Drawing.Size(24, 17);
+            this.lblTable.TabIndex = 0;
+            this.lblTable.Text = "表名";
+            // 
             // MainForm
             // 
             this.AllowMaximized = true;
@@ -196,6 +223,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbxDBType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtClass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPrefix.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTable.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,6 +239,8 @@
         private Winform.UserControls.UCSimpleButton btnGenerate;
         private Winform.UserControls.UCTextEdit txtPrefix;
         private Winform.UserControls.UCLabelEdit lblPrefix;
+        private Winform.UserControls.UCTextEdit txtTable;
+        private Winform.UserControls.UCLabelEdit lblTable;
     }
 }
 

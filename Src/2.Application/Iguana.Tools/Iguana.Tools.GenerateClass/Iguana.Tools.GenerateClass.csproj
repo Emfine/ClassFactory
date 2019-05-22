@@ -37,6 +37,10 @@
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\IDE\Dev Express\v16.2\Bin\Framework\DevExpress.Data.v16.2.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Utils.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -116,6 +120,10 @@
     <ProjectReference Include="..\..\..\1.Presentation\Winform\Iguana.Winform.UserForms\Iguana.Winform.UserForms.csproj">
       <Project>{9499A990-CCF8-4F9F-8B25-2FD9ADF2692D}</Project>
       <Name>Iguana.Winform.UserForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\3.Domain\Iguana.Tools.DTO\Iguana.Tools.DTO.csproj">
+      <Project>{61d7a075-22fa-4de7-bddb-84f30f36bf58}</Project>
+      <Name>Iguana.Tools.DTO</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\4.Service\Iguana.Tools.BLL\Iguana.Tools.BLL.csproj">
       <Project>{12e00146-bd5d-4a11-8f38-5e22e9b50583}</Project>
