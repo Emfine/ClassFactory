@@ -30,24 +30,24 @@
         {
             this.spcMain = new DevExpress.XtraEditors.SplitContainerControl();
             this.btnGenerate = new Iguana.Winform.UserControls.UCSimpleButton();
+            this.txtTable = new Iguana.Winform.UserControls.UCTextEdit();
+            this.txtPrefix = new Iguana.Winform.UserControls.UCTextEdit();
             this.txtDBString = new Iguana.Winform.UserControls.UCTextEdit();
             this.cbxDBType = new Iguana.Winform.UserControls.UCComboBoxEdit();
+            this.lblTable = new Iguana.Winform.UserControls.UCLabelEdit();
+            this.lblPrefix = new Iguana.Winform.UserControls.UCLabelEdit();
             this.lblDBString = new Iguana.Winform.UserControls.UCLabelEdit();
             this.lblDBType = new Iguana.Winform.UserControls.UCLabelEdit();
             this.txtClass = new Iguana.Winform.UserControls.UCMemoEdit();
-            this.lblPrefix = new Iguana.Winform.UserControls.UCLabelEdit();
-            this.txtPrefix = new Iguana.Winform.UserControls.UCTextEdit();
-            this.txtTable = new Iguana.Winform.UserControls.UCTextEdit();
-            this.lblTable = new Iguana.Winform.UserControls.UCLabelEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).BeginInit();
             this.pnlContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spcMain)).BeginInit();
             this.spcMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTable.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPrefix.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDBString.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxDBType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtClass.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrefix.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTable.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlContent
@@ -70,15 +70,17 @@
             this.spcMain.Panel1.Controls.Add(this.lblPrefix);
             this.spcMain.Panel1.Controls.Add(this.lblDBString);
             this.spcMain.Panel1.Controls.Add(this.lblDBType);
+            this.spcMain.Panel1.MinSize = 200;
             this.spcMain.Panel1.Text = "Panel1";
             this.spcMain.Panel2.Controls.Add(this.txtClass);
             this.spcMain.Panel2.Text = "Panel2";
-            this.spcMain.Size = new System.Drawing.Size(800, 465);
+            this.spcMain.Size = new System.Drawing.Size(798, 464);
             this.spcMain.SplitterPosition = 400;
             this.spcMain.TabIndex = 0;
             // 
             // btnGenerate
             // 
+            this.btnGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGenerate.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(240)))));
             this.btnGenerate.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(240)))));
             this.btnGenerate.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
@@ -105,8 +107,34 @@
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
+            // txtTable
+            // 
+            this.txtTable.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtTable.Location = new System.Drawing.Point(66, 84);
+            this.txtTable.Name = "txtTable";
+            this.txtTable.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.txtTable.Properties.Appearance.Options.UseFont = true;
+            this.txtTable.Size = new System.Drawing.Size(330, 24);
+            this.txtTable.TabIndex = 4;
+            // 
+            // txtPrefix
+            // 
+            this.txtPrefix.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPrefix.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtPrefix.Location = new System.Drawing.Point(66, 57);
+            this.txtPrefix.Name = "txtPrefix";
+            this.txtPrefix.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.txtPrefix.Properties.Appearance.Options.UseFont = true;
+            this.txtPrefix.Size = new System.Drawing.Size(330, 24);
+            this.txtPrefix.TabIndex = 3;
+            // 
             // txtDBString
             // 
+            this.txtDBString.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDBString.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtDBString.Location = new System.Drawing.Point(66, 30);
             this.txtDBString.Name = "txtDBString";
@@ -117,6 +145,8 @@
             // 
             // cbxDBType
             // 
+            this.cbxDBType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxDBType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbxDBType.Location = new System.Drawing.Point(66, 3);
             this.cbxDBType.Name = "cbxDBType";
@@ -126,6 +156,28 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbxDBType.Size = new System.Drawing.Size(330, 24);
             this.cbxDBType.TabIndex = 1;
+            // 
+            // lblTable
+            // 
+            this.lblTable.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.lblTable.Appearance.Options.UseFont = true;
+            this.lblTable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblTable.Location = new System.Drawing.Point(39, 87);
+            this.lblTable.Name = "lblTable";
+            this.lblTable.Size = new System.Drawing.Size(24, 17);
+            this.lblTable.TabIndex = 0;
+            this.lblTable.Text = "表名";
+            // 
+            // lblPrefix
+            // 
+            this.lblPrefix.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.lblPrefix.Appearance.Options.UseFont = true;
+            this.lblPrefix.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPrefix.Location = new System.Drawing.Point(15, 60);
+            this.lblPrefix.Name = "lblPrefix";
+            this.lblPrefix.Size = new System.Drawing.Size(48, 17);
+            this.lblPrefix.TabIndex = 0;
+            this.lblPrefix.Text = "字段前缀";
             // 
             // lblDBString
             // 
@@ -157,50 +209,8 @@
             this.txtClass.Name = "txtClass";
             this.txtClass.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.txtClass.Properties.Appearance.Options.UseFont = true;
-            this.txtClass.Size = new System.Drawing.Size(395, 465);
+            this.txtClass.Size = new System.Drawing.Size(393, 464);
             this.txtClass.TabIndex = 0;
-            // 
-            // lblPrefix
-            // 
-            this.lblPrefix.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.lblPrefix.Appearance.Options.UseFont = true;
-            this.lblPrefix.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblPrefix.Location = new System.Drawing.Point(15, 60);
-            this.lblPrefix.Name = "lblPrefix";
-            this.lblPrefix.Size = new System.Drawing.Size(48, 17);
-            this.lblPrefix.TabIndex = 0;
-            this.lblPrefix.Text = "字段前缀";
-            // 
-            // txtPrefix
-            // 
-            this.txtPrefix.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.txtPrefix.Location = new System.Drawing.Point(66, 57);
-            this.txtPrefix.Name = "txtPrefix";
-            this.txtPrefix.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtPrefix.Properties.Appearance.Options.UseFont = true;
-            this.txtPrefix.Size = new System.Drawing.Size(330, 24);
-            this.txtPrefix.TabIndex = 3;
-            // 
-            // txtTable
-            // 
-            this.txtTable.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.txtTable.Location = new System.Drawing.Point(66, 84);
-            this.txtTable.Name = "txtTable";
-            this.txtTable.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtTable.Properties.Appearance.Options.UseFont = true;
-            this.txtTable.Size = new System.Drawing.Size(330, 24);
-            this.txtTable.TabIndex = 4;
-            // 
-            // lblTable
-            // 
-            this.lblTable.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.lblTable.Appearance.Options.UseFont = true;
-            this.lblTable.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblTable.Location = new System.Drawing.Point(39, 87);
-            this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(24, 17);
-            this.lblTable.TabIndex = 0;
-            this.lblTable.Text = "表名";
             // 
             // MainForm
             // 
@@ -219,11 +229,11 @@
             this.pnlContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spcMain)).EndInit();
             this.spcMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtTable.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPrefix.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDBString.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxDBType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtClass.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrefix.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTable.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
