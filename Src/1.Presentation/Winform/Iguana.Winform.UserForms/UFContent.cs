@@ -39,6 +39,14 @@ namespace Iguana.Winform.UserForms
             lblClose.Text = "\uf12a";
         }
 
+        private void UFContent_Paint(object sender, PaintEventArgs e)
+        {
+            using (var pen = new Pen(Color.Silver, 1))
+            {
+                e.Graphics.DrawRectangle(pen, 0, 0, this.Width - 1, this.Height - 1);
+            }
+        }
+
         private void pnlTitle_DoubleClick(object sender, EventArgs e)
         {
             if (this.AllowMaximized)

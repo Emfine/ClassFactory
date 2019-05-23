@@ -1,4 +1,5 @@
-﻿using Iguana.Winform.UserForms;
+﻿using Iguana.Data.Enum;
+using Iguana.Winform.UserForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,12 +31,12 @@ namespace Iguana.Tools.GenerateClass
             var ex = e.ExceptionObject as Exception;
             if (ex == null) return;
 
-            MessageHelper.Show(EnumDialogStyleType.Info, ex.Message);
+            UFMessage.Show(EnumDialogStyleType.Info, ex.Message);
         }
 
         static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
         {
-            MessageHelper.Show(EnumDialogStyleType.Info, e.Exception.Message);
+            UFMessage.Show(EnumDialogStyleType.Info, e.Exception.Message);
         }
     }
 }

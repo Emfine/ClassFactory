@@ -28,41 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtMessage = new Iguana.Winform.UserControls.UCMemoEdit();
             this.flpButton = new System.Windows.Forms.FlowLayoutPanel();
             this.btnCancel = new Iguana.Winform.UserControls.UCSimpleButton();
             this.btnNo = new Iguana.Winform.UserControls.UCSimpleButton();
             this.btnYes = new Iguana.Winform.UserControls.UCSimpleButton();
             this.btnOK = new Iguana.Winform.UserControls.UCSimpleButton();
+            this.txtMessage = new Iguana.Winform.UserControls.UCMemoEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).BeginInit();
             this.pnlContent.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMessage.Properties)).BeginInit();
             this.flpButton.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMessage.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlContent
             // 
             this.pnlContent.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(255)))), ((int)(((byte)(232)))));
             this.pnlContent.Appearance.Options.UseBackColor = true;
-            this.pnlContent.Controls.Add(this.flpButton);
             this.pnlContent.Controls.Add(this.txtMessage);
-            this.pnlContent.Size = new System.Drawing.Size(400, 215);
-            // 
-            // txtMessage
-            // 
-            this.txtMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMessage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.txtMessage.Location = new System.Drawing.Point(10, 10);
-            this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.txtMessage.Properties.Appearance.Options.UseFont = true;
-            this.txtMessage.Properties.AppearanceDisabled.BackColor = System.Drawing.Color.White;
-            this.txtMessage.Properties.AppearanceDisabled.Options.UseBackColor = true;
-            this.txtMessage.Properties.ReadOnly = true;
-            this.txtMessage.Size = new System.Drawing.Size(380, 165);
-            this.txtMessage.TabIndex = 1;
+            this.pnlContent.Controls.Add(this.flpButton);
+            this.pnlContent.Size = new System.Drawing.Size(398, 214);
             // 
             // flpButton
             // 
@@ -73,9 +57,9 @@
             this.flpButton.Controls.Add(this.btnYes);
             this.flpButton.Controls.Add(this.btnOK);
             this.flpButton.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpButton.Location = new System.Drawing.Point(7, 183);
+            this.flpButton.Location = new System.Drawing.Point(7, 182);
             this.flpButton.Name = "flpButton";
-            this.flpButton.Size = new System.Drawing.Size(386, 29);
+            this.flpButton.Size = new System.Drawing.Size(384, 29);
             this.flpButton.TabIndex = 2;
             // 
             // btnCancel
@@ -100,7 +84,7 @@
             this.btnCancel.AppearancePressed.Options.UseBorderColor = true;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(308, 3);
+            this.btnCancel.Location = new System.Drawing.Point(306, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 4;
@@ -128,7 +112,7 @@
             this.btnNo.AppearancePressed.Options.UseBorderColor = true;
             this.btnNo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNo.DialogResult = System.Windows.Forms.DialogResult.No;
-            this.btnNo.Location = new System.Drawing.Point(227, 3);
+            this.btnNo.Location = new System.Drawing.Point(225, 3);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(75, 23);
             this.btnNo.TabIndex = 3;
@@ -156,7 +140,7 @@
             this.btnYes.AppearancePressed.Options.UseBorderColor = true;
             this.btnYes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnYes.DialogResult = System.Windows.Forms.DialogResult.Yes;
-            this.btnYes.Location = new System.Drawing.Point(146, 3);
+            this.btnYes.Location = new System.Drawing.Point(144, 3);
             this.btnYes.Name = "btnYes";
             this.btnYes.Size = new System.Drawing.Size(75, 23);
             this.btnYes.TabIndex = 2;
@@ -184,11 +168,24 @@
             this.btnOK.AppearancePressed.Options.UseBorderColor = true;
             this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(65, 3);
+            this.btnOK.Location = new System.Drawing.Point(63, 3);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 1;
             this.btnOK.Text = "确认(&O)";
+            // 
+            // txtMessage
+            // 
+            this.txtMessage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtMessage.Location = new System.Drawing.Point(10, 10);
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.txtMessage.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.txtMessage.Properties.Appearance.Options.UseBackColor = true;
+            this.txtMessage.Properties.Appearance.Options.UseFont = true;
+            this.txtMessage.Properties.ReadOnly = true;
+            this.txtMessage.Size = new System.Drawing.Size(378, 168);
+            this.txtMessage.TabIndex = 1;
             // 
             // UFMessage
             // 
@@ -203,19 +200,18 @@
             this.Text = "UFMessageForm";
             ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).EndInit();
             this.pnlContent.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtMessage.Properties)).EndInit();
             this.flpButton.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtMessage.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private UserControls.UCMemoEdit txtMessage;
         private System.Windows.Forms.FlowLayoutPanel flpButton;
         private UserControls.UCSimpleButton btnCancel;
         private UserControls.UCSimpleButton btnNo;
         private UserControls.UCSimpleButton btnYes;
         private UserControls.UCSimpleButton btnOK;
+        private UserControls.UCMemoEdit txtMessage;
     }
 }

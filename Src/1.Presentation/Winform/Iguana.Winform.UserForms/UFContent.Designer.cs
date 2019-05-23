@@ -43,9 +43,9 @@
             this.pnlContent.Appearance.Options.UseBackColor = true;
             this.pnlContent.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(0, 35);
+            this.pnlContent.Location = new System.Drawing.Point(1, 35);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(800, 465);
+            this.pnlContent.Size = new System.Drawing.Size(798, 464);
             this.pnlContent.TabIndex = 2;
             // 
             // pnlTitle
@@ -56,9 +56,9 @@
             this.pnlTitle.Controls.Add(this.lblClose);
             this.pnlTitle.Controls.Add(this.lblTitle);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitle.Location = new System.Drawing.Point(1, 1);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(800, 35);
+            this.pnlTitle.Size = new System.Drawing.Size(798, 34);
             this.pnlTitle.TabIndex = 1;
             this.pnlTitle.DoubleClick += new System.EventHandler(this.pnlTitle_DoubleClick);
             this.pnlTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseMove);
@@ -71,9 +71,9 @@
             this.lblClose.Appearance.Options.UseFont = true;
             this.lblClose.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClose.Location = new System.Drawing.Point(777, 5);
+            this.lblClose.Location = new System.Drawing.Point(773, 5);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(23, 26);
+            this.lblClose.Size = new System.Drawing.Size(23, 25);
             this.lblClose.TabIndex = 0;
             this.lblClose.Text = "关";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
@@ -90,7 +90,7 @@
             this.lblTitle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTitle.Location = new System.Drawing.Point(3, 5);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(766, 26);
+            this.lblTitle.Size = new System.Drawing.Size(764, 25);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "标题";
             this.lblTitle.DoubleClick += new System.EventHandler(this.lblTitle_DoubleClick);
@@ -105,7 +105,9 @@
             this.Controls.Add(this.pnlTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UFContent";
+            this.Padding = new System.Windows.Forms.Padding(1);
             this.Text = "UFContent";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.UFContent_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pnlContent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTitle)).EndInit();
             this.pnlTitle.ResumeLayout(false);

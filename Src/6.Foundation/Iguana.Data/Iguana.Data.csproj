@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\EnumDialogStyleType.cs" />
     <Compile Include="Enum\EnumMessageStyleType.cs" />
     <Compile Include="Enum\EnumOperateType.cs" />
     <Compile Include="Enum\EnumResponseStatusType.cs" />

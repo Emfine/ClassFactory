@@ -80,8 +80,12 @@
       <Project>{22A9B4E5-2903-4F41-A37F-554500852166}</Project>
       <Name>Iguana.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\6.Foundation\Iguana.Data\Iguana.Data.csproj">
+      <Project>{6A63DAEC-3EDB-4690-8361-AD9023DF4492}</Project>
+      <Name>Iguana.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Iguana.Winform.Common\Iguana.Winform.Common.csproj">
-      <Project>{B21C7656-66D5-4B80-A17A-0CE0E5617134}</Project>
+      <Project>{b21c7656-66d5-4b80-a17a-0ce0e5617134}</Project>
       <Name>Iguana.Winform.Common</Name>
     </ProjectReference>
   </ItemGroup>
