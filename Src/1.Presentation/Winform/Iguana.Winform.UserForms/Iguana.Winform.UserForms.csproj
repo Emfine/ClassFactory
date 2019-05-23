@@ -67,12 +67,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="UFMessage.resx">
+      <DependentUpon>UFMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\licenses.licx" />
     <EmbeddedResource Include="UFContent.resx">
       <DependentUpon>UFContent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\6.Foundation\Iguana.Core\Iguana.Core.csproj">
+      <Project>{22A9B4E5-2903-4F41-A37F-554500852166}</Project>
+      <Name>Iguana.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Iguana.Winform.Common\Iguana.Winform.Common.csproj">
       <Project>{B21C7656-66D5-4B80-A17A-0CE0E5617134}</Project>
       <Name>Iguana.Winform.Common</Name>
