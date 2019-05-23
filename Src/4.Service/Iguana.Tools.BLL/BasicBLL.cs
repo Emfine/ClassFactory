@@ -31,12 +31,12 @@ namespace Iguana.Tools.BLL
                     var fieldType = DBTypeCSharpMapping.SQLServerMap[field.Type];
                     if (fieldType != "string")
                     {
-                        if (field.IsNuallable) fieldType += "?";
+                        if (field.IsNullable) fieldType += "?";
                     }
                     if (!string.IsNullOrWhiteSpace(field.Note))
                     {
                         txt.AppendLine("/// <summary>");
-                        txt.AppendLine($"/// {field.Note.Replace("\n", "/// ")}");
+                        txt.AppendLine($"/// {field.Note.Replace("\n", "\n/// ")}");
                         txt.AppendLine("/// <summary>");
                     }
                     txt.AppendLine(condition.Prefix);

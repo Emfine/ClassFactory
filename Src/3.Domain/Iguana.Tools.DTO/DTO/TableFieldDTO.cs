@@ -26,7 +26,7 @@ namespace Iguana.Tools.DTO
         /// <summary>
         /// 是否可空
         /// </summary>
-        public bool IsNuallable { get; set; }
+        public bool IsNullable { get; set; }
         /// <summary>
         /// 是否自增
         /// </summary>

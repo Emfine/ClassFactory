@@ -35,10 +35,14 @@ namespace Iguana.Tools.GenerateClass
 
             cbxDBType.Properties.Items.Clear();
             cbxDBType.Properties.Items.AddRange(dbTypeList);
+            cbxDBType.SelectedIndex = 0;
+            txtDBString.Text = "Server=192.192.192.196\\sqlserver2016;Database=EHR_CPOE;user id=sa;password=Eureka@123;Connect Timeout=300;";
+            txtPrefix.Text = "[DataMember]";
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
+            txtClass.Text = "";
             var bll = IOCHelper.Resolve<IBasicBLL>();
             string classText = bll.GenerateORMClass(new GenerateCDT
             {
