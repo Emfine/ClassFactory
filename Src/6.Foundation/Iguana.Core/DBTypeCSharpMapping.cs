@@ -18,6 +18,7 @@ namespace Iguana.Core
                     {
                         ["int"] = "int",
                         ["smallint"] = "short",
+                        ["float"] = "double",
                         ["decimal"] = "decimal",
                         ["varchar"] = "string",
                         ["nvarchar"] = "string",

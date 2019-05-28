@@ -39,7 +39,10 @@ namespace Iguana.Tools.BLL
                         txt.AppendLine($"/// {field.Note.Replace("\n", "\n/// ")}");
                         txt.AppendLine("/// <summary>");
                     }
-                    txt.AppendLine(condition.Prefix);
+                    if (!string.IsNullOrWhiteSpace(condition.Prefix))
+                    {
+                        txt.AppendLine(condition.Prefix);
+                    }
                     txt.Append($"public {fieldType} {field.Name}");
                     txt.AppendLine("{get; set;}");
                 }
