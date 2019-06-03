@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8834E5E-A490-4B62-8E21-3CFCB0C0A9C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Iguana.Tools.ORMClass</RootNamespace>
+    <AssemblyName>Iguana.Tools.ORMClass</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Tools\Iguana.Tools.ORMClass\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLL.cs" />
+    <Compile Include="BLL\IBLL.cs" />
+    <Compile Include="DAL\DALSQL.cs" />
+    <Compile Include="DAL\IDAL.cs" />
+    <Compile Include="Dapper\CommandDefinition.cs" />
+    <Compile Include="Dapper\CommandFlags.cs" />
+    <Compile Include="Dapper\CustomPropertyTypeMap.cs" />
+    <Compile Include="Dapper\DataTableHandler.cs" />
+    <Compile Include="Dapper\DbString.cs" />
+    <Compile Include="Dapper\DefaultTypeMap.cs" />
+    <Compile Include="Dapper\DynamicParameters.CachedOutputSetters.cs" />
+    <Compile Include="Dapper\DynamicParameters.cs" />
+    <Compile Include="Dapper\DynamicParameters.ParamInfo.cs" />
+    <Compile Include="Dapper\ExplicitConstructorAttribute.cs" />
+    <Compile Include="Dapper\FeatureSupport.cs" />
+    <Compile Include="Dapper\SimpleMemberMap.cs" />
+    <Compile Include="Dapper\SqlDataRecordHandler.cs" />
+    <Compile Include="Dapper\SqlDataRecordListTVPParameter.cs" />
+    <Compile Include="Dapper\SqlMapper.Async.cs" />
+    <Compile Include="Dapper\SqlMapper.CacheInfo.cs" />
+    <Compile Include="Dapper\SqlMapper.cs" />
+    <Compile Include="Dapper\SqlMapper.DapperRow.cs" />
+    <Compile Include="Dapper\SqlMapper.DapperRow.Descriptor.cs" />
+    <Compile Include="Dapper\SqlMapper.DapperRowMetaObject.cs" />
+    <Compile Include="Dapper\SqlMapper.DapperTable.cs" />
+    <Compile Include="Dapper\SqlMapper.DeserializerState.cs" />
+    <Compile Include="Dapper\SqlMapper.DontMap.cs" />
+    <Compile Include="Dapper\SqlMapper.GridReader.Async.cs" />
+    <Compile Include="Dapper\SqlMapper.GridReader.cs" />
+    <Compile Include="Dapper\SqlMapper.ICustomQueryParameter.cs" />
+    <Compile Include="Dapper\SqlMapper.IDataReader.cs" />
+    <Compile Include="Dapper\SqlMapper.Identity.cs" />
+    <Compile Include="Dapper\SqlMapper.IDynamicParameters.cs" />
+    <Compile Include="Dapper\SqlMapper.IMemberMap.cs" />
+    <Compile Include="Dapper\SqlMapper.IParameterCallbacks.cs" />
+    <Compile Include="Dapper\SqlMapper.IParameterLookup.cs" />
+    <Compile Include="Dapper\SqlMapper.ITypeHandler.cs" />
+    <Compile Include="Dapper\SqlMapper.ITypeMap.cs" />
+    <Compile Include="Dapper\SqlMapper.Link.cs" />
+    <Compile Include="Dapper\SqlMapper.LiteralToken.cs" />
+    <Compile Include="Dapper\SqlMapper.Settings.cs" />
+    <Compile Include="Dapper\SqlMapper.TypeDeserializerCache.cs" />
+    <Compile Include="Dapper\SqlMapper.TypeHandler.cs" />
+    <Compile Include="Dapper\SqlMapper.TypeHandlerCache.cs" />
+    <Compile Include="Dapper\TableValuedParameter.cs" />
+    <Compile Include="Dapper\TypeExtensions.cs" />
+    <Compile Include="Dapper\UdtTypeHandler.cs" />
+    <Compile Include="Dapper\WrappedDataReader.cs" />
+    <Compile Include="Dapper\WrappedReader.cs" />
+    <Compile Include="Dapper\XmlHandlers.cs" />
+    <Compile Include="Enum\EnumDialogStyleType.cs" />
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Helper\EnumHelper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TableFieldCDT.cs" />
+    <Compile Include="Model\TableFieldDTO.cs" />
+    <Compile Include="Model\GenerateCDT.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserForm\UFMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\UFMessage.Designer.cs">
+      <DependentUpon>UFMessage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserForm\UFMessage.resx">
+      <DependentUpon>UFMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
