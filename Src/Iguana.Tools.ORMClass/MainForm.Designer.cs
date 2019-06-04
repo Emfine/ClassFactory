@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.spcMain = new System.Windows.Forms.SplitContainer();
+            this.cbxShowMemo = new System.Windows.Forms.CheckBox();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.txtTable = new System.Windows.Forms.TextBox();
             this.txtPrefix = new System.Windows.Forms.TextBox();
@@ -38,8 +39,7 @@
             this.lblPrefix = new System.Windows.Forms.Label();
             this.lblDBString = new System.Windows.Forms.Label();
             this.lblDBType = new System.Windows.Forms.Label();
-            this.txtClass = new System.Windows.Forms.TextBox();
-            this.cbxShowMemo = new System.Windows.Forms.CheckBox();
+            this.txtClass = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.spcMain)).BeginInit();
             this.spcMain.Panel1.SuspendLayout();
             this.spcMain.Panel2.SuspendLayout();
@@ -74,6 +74,16 @@
             this.spcMain.SplitterDistance = 533;
             this.spcMain.SplitterWidth = 5;
             this.spcMain.TabIndex = 0;
+            // 
+            // cbxShowMemo
+            // 
+            this.cbxShowMemo.AutoSize = true;
+            this.cbxShowMemo.Location = new System.Drawing.Point(95, 127);
+            this.cbxShowMemo.Name = "cbxShowMemo";
+            this.cbxShowMemo.Size = new System.Drawing.Size(89, 19);
+            this.cbxShowMemo.TabIndex = 5;
+            this.cbxShowMemo.Text = "显示备注";
+            this.cbxShowMemo.UseVisualStyleBackColor = true;
             // 
             // btnGenerate
             // 
@@ -168,23 +178,11 @@
             this.txtClass.BackColor = System.Drawing.Color.White;
             this.txtClass.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtClass.Location = new System.Drawing.Point(0, 0);
-            this.txtClass.Margin = new System.Windows.Forms.Padding(0);
-            this.txtClass.Multiline = true;
             this.txtClass.Name = "txtClass";
             this.txtClass.ReadOnly = true;
-            this.txtClass.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtClass.Size = new System.Drawing.Size(525, 621);
             this.txtClass.TabIndex = 0;
-            // 
-            // cbxShowMemo
-            // 
-            this.cbxShowMemo.AutoSize = true;
-            this.cbxShowMemo.Location = new System.Drawing.Point(95, 127);
-            this.cbxShowMemo.Name = "cbxShowMemo";
-            this.cbxShowMemo.Size = new System.Drawing.Size(89, 19);
-            this.cbxShowMemo.TabIndex = 5;
-            this.cbxShowMemo.Text = "显示备注";
-            this.cbxShowMemo.UseVisualStyleBackColor = true;
+            this.txtClass.Text = "";
             // 
             // MainForm
             // 
@@ -192,7 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 625);
             this.Controls.Add(this.spcMain);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -201,7 +199,6 @@
             this.spcMain.Panel1.ResumeLayout(false);
             this.spcMain.Panel1.PerformLayout();
             this.spcMain.Panel2.ResumeLayout(false);
-            this.spcMain.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spcMain)).EndInit();
             this.spcMain.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -220,8 +217,8 @@
         private System.Windows.Forms.Label lblTable;
         private System.Windows.Forms.Label lblPrefix;
         private System.Windows.Forms.Button btnGenerate;
-        private System.Windows.Forms.TextBox txtClass;
         private System.Windows.Forms.CheckBox cbxShowMemo;
+        private System.Windows.Forms.RichTextBox txtClass;
     }
 }
 
