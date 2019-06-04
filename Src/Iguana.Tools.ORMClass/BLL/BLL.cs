@@ -40,7 +40,7 @@ namespace Iguana.Tools.ORMClass.BLL
                     {
                         if (field.IsNullable) fieldType += "?";
                     }
-                    if (!string.IsNullOrWhiteSpace(field.Note))
+                    if (condition.ShowMemo && !string.IsNullOrWhiteSpace(field.Note))
                     {
                         txt.AppendLine("/// <summary>");
                         txt.AppendLine($"/// {field.Note.Replace("\n", "\n/// ")}");

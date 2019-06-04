@@ -39,6 +39,7 @@
             this.lblDBString = new System.Windows.Forms.Label();
             this.lblDBType = new System.Windows.Forms.Label();
             this.txtClass = new System.Windows.Forms.TextBox();
+            this.cbxShowMemo = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.spcMain)).BeginInit();
             this.spcMain.Panel1.SuspendLayout();
             this.spcMain.Panel2.SuspendLayout();
@@ -55,6 +56,7 @@
             // 
             // spcMain.Panel1
             // 
+            this.spcMain.Panel1.Controls.Add(this.cbxShowMemo);
             this.spcMain.Panel1.Controls.Add(this.btnGenerate);
             this.spcMain.Panel1.Controls.Add(this.txtTable);
             this.spcMain.Panel1.Controls.Add(this.txtPrefix);
@@ -68,8 +70,9 @@
             // spcMain.Panel2
             // 
             this.spcMain.Panel2.Controls.Add(this.txtClass);
-            this.spcMain.Size = new System.Drawing.Size(800, 500);
-            this.spcMain.SplitterDistance = 400;
+            this.spcMain.Size = new System.Drawing.Size(1067, 625);
+            this.spcMain.SplitterDistance = 533;
+            this.spcMain.SplitterWidth = 5;
             this.spcMain.TabIndex = 0;
             // 
             // btnGenerate
@@ -77,86 +80,86 @@
             this.btnGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(140)))));
             this.btnGenerate.FlatAppearance.BorderSize = 0;
             this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerate.Location = new System.Drawing.Point(319, 98);
+            this.btnGenerate.Location = new System.Drawing.Point(425, 122);
             this.btnGenerate.Margin = new System.Windows.Forms.Padding(0);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(75, 23);
-            this.btnGenerate.TabIndex = 5;
+            this.btnGenerate.Size = new System.Drawing.Size(100, 29);
+            this.btnGenerate.TabIndex = 6;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = false;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // txtTable
             // 
-            this.txtTable.Location = new System.Drawing.Point(71, 74);
+            this.txtTable.Location = new System.Drawing.Point(95, 92);
             this.txtTable.Margin = new System.Windows.Forms.Padding(0);
             this.txtTable.Name = "txtTable";
-            this.txtTable.Size = new System.Drawing.Size(323, 21);
+            this.txtTable.Size = new System.Drawing.Size(429, 25);
             this.txtTable.TabIndex = 4;
             // 
             // txtPrefix
             // 
-            this.txtPrefix.Location = new System.Drawing.Point(71, 50);
+            this.txtPrefix.Location = new System.Drawing.Point(95, 62);
             this.txtPrefix.Margin = new System.Windows.Forms.Padding(0);
             this.txtPrefix.Name = "txtPrefix";
-            this.txtPrefix.Size = new System.Drawing.Size(323, 21);
+            this.txtPrefix.Size = new System.Drawing.Size(429, 25);
             this.txtPrefix.TabIndex = 3;
             // 
             // txtDBString
             // 
-            this.txtDBString.Location = new System.Drawing.Point(71, 26);
+            this.txtDBString.Location = new System.Drawing.Point(95, 32);
             this.txtDBString.Margin = new System.Windows.Forms.Padding(0);
             this.txtDBString.Name = "txtDBString";
-            this.txtDBString.Size = new System.Drawing.Size(323, 21);
+            this.txtDBString.Size = new System.Drawing.Size(429, 25);
             this.txtDBString.TabIndex = 2;
             // 
             // cbxDBType
             // 
             this.cbxDBType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxDBType.FormattingEnabled = true;
-            this.cbxDBType.Location = new System.Drawing.Point(71, 3);
+            this.cbxDBType.Location = new System.Drawing.Point(95, 4);
             this.cbxDBType.Margin = new System.Windows.Forms.Padding(0);
             this.cbxDBType.Name = "cbxDBType";
-            this.cbxDBType.Size = new System.Drawing.Size(323, 20);
+            this.cbxDBType.Size = new System.Drawing.Size(429, 23);
             this.cbxDBType.TabIndex = 1;
             // 
             // lblTable
             // 
             this.lblTable.AutoSize = true;
-            this.lblTable.Location = new System.Drawing.Point(39, 78);
+            this.lblTable.Location = new System.Drawing.Point(52, 98);
             this.lblTable.Margin = new System.Windows.Forms.Padding(0);
             this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(29, 12);
+            this.lblTable.Size = new System.Drawing.Size(37, 15);
             this.lblTable.TabIndex = 0;
             this.lblTable.Text = "表名";
             // 
             // lblPrefix
             // 
             this.lblPrefix.AutoSize = true;
-            this.lblPrefix.Location = new System.Drawing.Point(15, 54);
+            this.lblPrefix.Location = new System.Drawing.Point(20, 68);
             this.lblPrefix.Margin = new System.Windows.Forms.Padding(0);
             this.lblPrefix.Name = "lblPrefix";
-            this.lblPrefix.Size = new System.Drawing.Size(53, 12);
+            this.lblPrefix.Size = new System.Drawing.Size(67, 15);
             this.lblPrefix.TabIndex = 0;
             this.lblPrefix.Text = "字段前缀";
             // 
             // lblDBString
             // 
             this.lblDBString.AutoSize = true;
-            this.lblDBString.Location = new System.Drawing.Point(3, 30);
+            this.lblDBString.Location = new System.Drawing.Point(4, 38);
             this.lblDBString.Margin = new System.Windows.Forms.Padding(0);
             this.lblDBString.Name = "lblDBString";
-            this.lblDBString.Size = new System.Drawing.Size(65, 12);
+            this.lblDBString.Size = new System.Drawing.Size(82, 15);
             this.lblDBString.TabIndex = 0;
             this.lblDBString.Text = "数据库链接";
             // 
             // lblDBType
             // 
             this.lblDBType.AutoSize = true;
-            this.lblDBType.Location = new System.Drawing.Point(3, 7);
+            this.lblDBType.Location = new System.Drawing.Point(4, 9);
             this.lblDBType.Margin = new System.Windows.Forms.Padding(0);
             this.lblDBType.Name = "lblDBType";
-            this.lblDBType.Size = new System.Drawing.Size(65, 12);
+            this.lblDBType.Size = new System.Drawing.Size(82, 15);
             this.lblDBType.TabIndex = 0;
             this.lblDBType.Text = "数据库类型";
             // 
@@ -170,15 +173,26 @@
             this.txtClass.Name = "txtClass";
             this.txtClass.ReadOnly = true;
             this.txtClass.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtClass.Size = new System.Drawing.Size(392, 496);
+            this.txtClass.Size = new System.Drawing.Size(525, 621);
             this.txtClass.TabIndex = 0;
+            // 
+            // cbxShowMemo
+            // 
+            this.cbxShowMemo.AutoSize = true;
+            this.cbxShowMemo.Location = new System.Drawing.Point(95, 127);
+            this.cbxShowMemo.Name = "cbxShowMemo";
+            this.cbxShowMemo.Size = new System.Drawing.Size(89, 19);
+            this.cbxShowMemo.TabIndex = 5;
+            this.cbxShowMemo.Text = "显示备注";
+            this.cbxShowMemo.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ClientSize = new System.Drawing.Size(1067, 625);
             this.Controls.Add(this.spcMain);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -207,6 +221,7 @@
         private System.Windows.Forms.Label lblPrefix;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.TextBox txtClass;
+        private System.Windows.Forms.CheckBox cbxShowMemo;
     }
 }
 

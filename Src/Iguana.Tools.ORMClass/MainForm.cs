@@ -30,6 +30,7 @@ namespace Iguana.Tools.ORMClass
             cbxDBType.DataSource = dbTypeList;
             cbxDBType.SelectedIndex = 0;
             txtDBString.Text = "Server=xxx.xxx.xxx.xxx;Database=xxx;user id=xxx;password=xxx;Connect Timeout=300;";
+            cbxShowMemo.Checked = true;
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
@@ -41,7 +42,8 @@ namespace Iguana.Tools.ORMClass
                 DBType = cbxDBType.Text,
                 ConnectionString = txtDBString.Text,
                 Prefix = txtPrefix.Text,
-                Table = txtTable.Text
+                Table = txtTable.Text,
+                ShowMemo = cbxShowMemo.Checked
             });
             txtClass.Text = classText;
         }

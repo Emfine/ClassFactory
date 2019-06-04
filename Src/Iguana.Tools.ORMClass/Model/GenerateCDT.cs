@@ -12,5 +12,6 @@ namespace Iguana.Tools.ORMClass.Model
         public string ConnectionString { get; set; }
         public string Table { get; set; }
         public string Prefix { get; set; }
+        public bool ShowMemo { get; set; }
     }
 }
