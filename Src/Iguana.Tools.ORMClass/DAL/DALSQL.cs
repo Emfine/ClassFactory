@@ -30,15 +30,23 @@ namespace Iguana.Tools.ORMClass.DAL
         {
             var dic = new Dictionary<string, string>
             {
-                ["int"] = "int",
+                ["bit"] = "bool",
                 ["smallint"] = "short",
+                ["tinyint"] = "byte",
+                ["int"] = "int",
+                ["bigint"] = "long",
+                ["real"] = "float",
                 ["float"] = "double",
+                ["money"] = "decimal",
                 ["decimal"] = "decimal",
+                ["char"] = "string",
                 ["varchar"] = "string",
                 ["nvarchar"] = "string",
                 ["datetime"] = "DateTime",
                 ["uniqueidentifier"] = "Guid",
-                ["text"] = "string"
+                ["text"] = "string",
+                ["image"] = "byte[]",
+                ["binary"] = "byte[]"
             };
             return dic;
         }

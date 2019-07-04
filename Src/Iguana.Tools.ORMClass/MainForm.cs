@@ -29,7 +29,11 @@ namespace Iguana.Tools.ORMClass
 
             cbxDBType.DataSource = dbTypeList;
             cbxDBType.SelectedIndex = 0;
-            txtDBString.Text = "Server=xxx.xxx.xxx.xxx;Database=xxx;user id=xxx;password=xxx;Connect Timeout=300;";
+
+            string dbString = DataHelper.AppSettingFactory("DefaultDBString");
+            if (string.IsNullOrWhiteSpace(dbString)) dbString = "Server=xxx.xxx.xxx.xxx;Database=xxx;user id=xxx;password=xxx;Connect Timeout=300;";
+            txtDBString.Text = dbString;
+
             cbxShowMemo.Checked = true;
         }
 
