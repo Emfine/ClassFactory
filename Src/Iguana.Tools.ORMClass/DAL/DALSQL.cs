@@ -24,6 +24,7 @@ namespace Iguana.Tools.ORMClass.DAL
                 ["float"] = "double",
                 ["money"] = "decimal",
                 ["decimal"] = "decimal",
+                ["numeric"] = "decimal",
                 ["char"] = "string",
                 ["varchar"] = "string",
                 ["nvarchar"] = "string",
